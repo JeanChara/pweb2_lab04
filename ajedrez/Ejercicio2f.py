@@ -1,4 +1,5 @@
 from interpreter import draw
 from chessPictures import *
 
-draw(knight.verticalRepeat(7))
+fila = (square.join(square.negative())).horizontalRepeat(4)
+draw((fila.up(fila.negative())).verticalRepeat(2))
