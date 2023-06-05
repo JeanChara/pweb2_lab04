@@ -1,4 +1,5 @@
 from interpreter import draw
 from chessPictures import *
 
-draw(KNIGHT)
+draw(knight.negative())
+###draw(knight)
