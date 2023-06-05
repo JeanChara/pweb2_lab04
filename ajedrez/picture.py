@@ -30,12 +30,15 @@ class Picture:
         for caracter in linea:
           lineaNeg += ""+self._invColor(caracter)
         neg.append(lineaNeg)
-    return neg
+    return Picture(neg)
 
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
-    return Picture(None)
+    nuevaFigura = []
+    for i in range(len(self.img)):
+      nuevaFigura.append(self.img[i] + p.img[i]) # concatenamos de fila en fila
+    return nuevaFigura
 
   def up(self, p):
     return Picture(None)
