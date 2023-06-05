@@ -38,15 +38,27 @@ class Picture:
     nuevaFigura = []
     for i in range(len(self.img)):
       nuevaFigura.append(self.img[i] + p.img[i]) # concatenamos de fila en fila
-    return nuevaFigura
+    return Picture(nuevaFigura)
 
   def up(self, p):
-    return Picture(None)
+    """ Devuelve una nueva figura poniendo la figura p debajo de la figura actual """
+    nuevaFigura = []
+    for i in self.img:
+      nuevaFigura.append(i)
+    for j in p.img:
+      nuevaFigura.append(j)
+    return Picture(nuevaFigura)
 
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
-    return Picture(None)
+    nuevaFigura = []
+    for i in p.img:
+      nuevaFigura.append(i)
+    for j in self.img:
+      nuevaFigura.append(j)
+
+    return Picture(nuevaFigura)
   
   def horizontalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual al costado
