@@ -110,7 +110,7 @@ draw):
 
     ![img](./img/img9.png)
 
-        - Ejercicio2d (4): 
+    - Ejercicio2d (4): 
 
     ![img](./img/img10.png)
 
@@ -121,7 +121,7 @@ draw):
 
     ![img](./img/img11.png)
 
-        - Ejercicio2e (5): 
+    - Ejercicio2e (5): 
 
     ![img](./img/img12.png)
 
@@ -132,7 +132,7 @@ draw):
 
     ![img](./img/img13.png)
 
-        - Ejercicio2f (6): 
+    - Ejercicio2f (6): 
 
     ![img](./img/img14.png)
 
@@ -147,7 +147,7 @@ draw):
 
     ![img](./img/img15.png)
 
-        - Ejercicio2g (7): 
+    - Ejercicio2g (7): 
 
     ![img](./img/img16.png)
 
