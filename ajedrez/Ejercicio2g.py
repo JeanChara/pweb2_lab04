@@ -29,4 +29,4 @@ fichasN = (peones.negative().under(torres.negative()))
 
 tablero = (fichasN.up(espacio).up(fichas))
 
-draw(tablero)
+draw(tablero) # imprime el tablero
