@@ -10,3 +10,7 @@ espacio = (fila.up(fila.negative())).verticalRepeat(2)
 
 fichas = (peones.under(torres))
 fichasN = (peones.negative().under(torres.negative()))
+
+tablero = (fichasN.up(espacio).up(fichas))
+
+draw(tablero)
