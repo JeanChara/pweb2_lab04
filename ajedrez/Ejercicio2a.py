@@ -1,6 +1,4 @@
 from interpreter import draw
 from chessPictures import *
 
-#draw(knight.negative().under(knight).join(knight.negative().up(knight)))
-
-draw(knight.under(queen))
+draw(knight.up(knight.negative()).join(knight.negative().up(knight)))
