@@ -87,7 +87,28 @@ class Picture:
       i+=1
 
     return Picture(nuevaFigura.img)
+  def inSquare(self,value): #0 = blanco, 1 = negro
+    """ funcion auxiliar para meter una pieza en un cuadrado. """
+    nuevaFigura = []
+    color = "_"
+    if value == 1:
+      color ="="
 
+    for linea in self.img:
+      i = 0
+      aux = ""
+      while i<len(linea):
+        if linea[i] == " ":
+          aux +=color
+        else:
+          aux +=linea[i]
+        i+=1
+      nuevaFigura.append(aux)
+    return Picture(nuevaFigura)
+
+
+
+    
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
     """Devuelve una figura rotada en 90 grados, puede ser en sentido horario
