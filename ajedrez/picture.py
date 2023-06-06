@@ -14,8 +14,8 @@ class Picture:
   def verticalMirror(self):
     """ Devuelve el espejo vertical de la imagen """
     vertical = []
-    for value in self.img:
-      vertical.append(value[::-1])
+    for i in range(len(self.img)):
+      vertical.append(self.img.pop())
     return Picture(vertical)
   
   def horizontalMirror(self):
