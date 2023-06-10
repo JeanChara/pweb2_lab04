@@ -23,8 +23,6 @@
 \newcommand{\curso}{Programación Web 2}
 \newcommand{\estudiante}{Chara Condori Jean Carlo}
   
-\newcommand{\foto}{\includegraphics[]{../img/logo_episunsa.png}}
-
 % para cabeceras
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -97,22 +95,73 @@
     		\item REPOSITORIO GITHUB: 
             \item 
             \url{https://github.com/JeanChara/pweb2_lab04}
-    		\item Código clase picture:
-      \item 
-      \includegraphics[width=3cm]{../img/logo_episunsa.png}
-    		\item 
-      \end{itemize}
-      	\begin{figure}[H]
-		\centering
-		\foto
-        \foto
-        \foto
-		%\includesvg{img/automata.svg}
-		\label{img:mot2}
-    \includegraphics[]{../img/logo_episunsa.png}
+    		\item Código clase picture:\\
+            \includegraphics[]{../img/img1.png}
+            \includegraphics[]{../img/img2.png}\\
+            \includegraphics[]{../img/img3.png}\\
+            
+            \item Ejercicio2a (1): \\
+            \includegraphics[]{../img/img4.png}\\
+            Utilizamos la función negative para hallar el color inverso de nuestra pieza, la función up para colocar
+            nuestra pieza arriba de la otra, y la función join para unir estas piezas.
+            Colocamos al caballo blanco encima de nuestro caballo negro, una vez realizado esto, la unimos con la otra columna(caballo negro sobre caballo blanco).\\
+            Ejecucion:\\
+            \includegraphics[]{../img/img5.png}\\
 
-		%\caption{Product backlog.}
-	\end{figure}
+            \item Ejercicio2b (2): \\
+            \includegraphics[]{../img/img6.png}\\
+            En este ejercicio añadimos la función horizontalMirror(), la cual cambiara de dirección a nuestra
+            pieza, haciendo que mire hacia el otro lado. Al igual que el ejercicio2a (1), creamos nuestros
+            caballos, los colocamos en columnas y los unimos. \\
+            Ejecucion:\\
+            \includegraphics[]{../img/img7.png}\\
+
+            \item Ejercicio2c (3): \\
+            \includegraphics[]{../img/img8.png}\\
+            En este ejercicio creamos la función horizontalRepeat, la cual repetirá nuestra pieza un numero
+            determinado de veces, esta función concatena a las piezas, haciendo que se coloquen una al costado de otra (izquierda a derecha).\\
+            Ejecucion:\\
+            \includegraphics[]{../img/img9.png}\\
+
+            \item Ejercicio2d (4): \\
+            \includegraphics[]{../img/img10.png}\\
+            En este ejercicio se nos pide crear una fila de un tablero de ajedrez, por lo que creamos los 2
+            primeros cuadrados (blanco y negro) y los repetimos 4 veces, para crear una fila con 8 elementos. \\
+            Ejecucion:\\
+            \includegraphics[]{../img/img11.png}\\
+
+            \item Ejercicio2e (5): \\
+            \includegraphics[]{../img/img12.png}\\
+            Al igual que el anterior (Ejercicio2d), se nos pide crear una fila de cuadrados, solo que el orden de los cuadrados es diferente (negro y blanco). \\
+            Ejecucion:\\
+            \includegraphics[]{../img/img13.png}\\
+
+            \item Ejercicio2f (6): \\
+            \includegraphics[]{../img/img14.png}\\
+            Se crea la función verticalRepeat, la cual al igual que horizontalRepeat, creara varias veces un
+            elemento o pieza, pero en columna, es decir, repetirá n veces el elemento hacia abajo.
+            En este ejercicio se nos pide crear 4 filas intercaladas de cuadrados, por lo que creamos la variable fila, la cual almacenara una fila intercalada de cuadrados (iniciando con el blanco), luego, lo
+            colocamos encima de nuestra fila con color negativo, utilizando la función verticalRepeat, lo
+            haremos 2 veces para asi crear 4 filas, puesto que repite 2 veces la creación de 2 filas. \\
+            Ejecucion:\\
+            \includegraphics[]{../img/img15.png}\\
+
+            \item Ejercicio2g (7): \\
+            \includegraphics[]{../img/img16.png}\\
+            En este ejercicio se nos pide crear un tablero de ajedrez.
+            Creamos la variable torres, la cual concatenara con join a todas las piezas en orden de juego, estas
+            piezas se encuentran superpuestas a los cuadros respectivos, intercalando de color.
+            Seguidamente creamos la variable peones, la cual creara con horizontalRepeat la fila de peones.
+            Creamos la variable fila, la cual almacenara una fila de cuadros, repitiéndose 4 veces para llegar a 8 elementos, luego en la variable espacio, la repetimos/ verticalmente 2 veces.
+            Creamos las variables fichas y fichasN, las cuales almacenaran el orden de piezas para las fichas
+            negras y blancas respectivamente, se utiliza la funcion up y negative para el orden y color.
+            Finalmente, unimos las variables en la variable tablero, la cual colocara primero las fichas negras,
+            luego el espacio y finalmente las fichas blancas. \\
+            Ejecucion:\\
+            \includegraphics[]{../img/img17.png}\\
+            
+      \end{itemize}
+
     \section{Solucion del Cuestionario}
     	\begin{itemize}		
     		\item 
