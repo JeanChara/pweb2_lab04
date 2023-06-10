@@ -1,8 +1,16 @@
 \documentclass[]{article}
 \usepackage[top=3cm, bottom=3cm, outer=3cm, inner=3cm]{geometry}
 \usepackage{graphicx} % Required for inserting images
+\usepackage{float}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{color, colortbl}
 
-\title{informe_Latex}
+\definecolor{fondo}{rgb}{0.8, 0, 0}
+
+
+\title{prueba}
 \author{JEAN CARLO CHARA CONDORI}
 \date{June 2023}
 %\pagestyle{myheadings}
@@ -21,15 +29,28 @@
 \setlength{\headheight}{30pt}
 \renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{1pt}
-\fancyhead[L]{\raisebox{-0.2\height}{\includegraphics[width=3cm]{img/logo_episunsa.png}}}
+\fancyhead[L]{\raisebox{-0.2\height}{\includegraphics[width=3cm]{../img/logo_episunsa.png}}}
 \fancyhead[C]{\fontsize{7}{7}\selectfont	\universidad \\ \facultad \\ \departamento \\ \escuela \\ \textbf{\curso}}
-\fancyhead[R]{\raisebox{-0.2\height}{\includegraphics[width=1.2cm]{img/logo_abet}}}
+\fancyhead[R]{\raisebox{-0.2\height}{\includegraphics[width=1.2cm]{../img/logo_abet}}}
 \fancyfoot[L]{Chara Condori Jean Carlo}
-\fancyfoot[C]{\itemCourse}
+\fancyfoot[C]{\curso}
 \fancyfoot[R]{Página \thepage}
 
-\begin{document}
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+% color para tablas
 
+
+\begin{document}
+	\begin{table}[H]
+		\begin{tabular}{|x{4.7cm}|x{4.8cm}|x{4.8cm}|}
+			\hline 
+			\rowcolor{fondo}
+			\color{white}\textbf{Semestre académico} & \color{white}\textbf{Fecha de inicio}  & \color{white}\textbf{Fecha de entrega}   \\
+			\hline 
+			hola & esta es una &  ´prueba  \\
+			\hline 
+		\end{tabular}
+	\end{table}
 %\section{Introduction}
 
 a
